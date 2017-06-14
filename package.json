@@ -4,7 +4,7 @@
   "description": "Aplicacion ferias",
   "main": "index.js",
   "scripts": {
-  	"start": "nodemon index.js",
+    "start": "NODE_ENV=development DEBUG=feriapp* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nicolas Frasson Marti",
@@ -12,11 +12,12 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
+    "config": "^1.26.1",
     "connect-multiparty": "^2.0.0",
     "express": "^4.15.3",
     "jwt-simple": "^0.5.1",
     "moment": "^2.18.1",
-    "mongoose": "^4.10.0",
+    "mongoose": "^4.10.6",
     "mongoose-pagination": "^1.0.0"
   },
   "devDependencies": {

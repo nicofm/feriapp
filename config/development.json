@@ -1,0 +1,8 @@
+{
+	"config": {
+		"serverHttp": {
+			"port": "3000"
+		},
+		"mongoUrl": "mongodb://development:N7^01iv*P974@ds119380.mlab.com:19380/feriapp-develop"
+	}
+}

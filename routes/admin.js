@@ -6,7 +6,7 @@ var api = express.Router();
 var md_auth = require('../middlewares/authenticated');
 
 var multipart = require('connect-multiparty');
-var md_upload = multipart({ uploadDir: './uploads/admins'});
+var md_upload = multipart({ uploadDir: './uploads/admins' });
 
 api.get('/admin/:id', md_auth.ensureAuth, AdminController.getAdmin);
 api.post('/admin', md_auth.ensureAuth, AdminController.saveAdmin);
